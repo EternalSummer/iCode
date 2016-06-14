@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>call & apply 作用</title>
+</head>
+<body>
+	<div id="d1">请点击</div>
+	<script type="text/javascript">
+		//1.改变this指向
+		document.getElementById("d1").onclick = function () {
+			alert(this.id);
+			// var func = function(){
+			// 	alert(this.id); //undefinedd
+			// }
+			// func();	
+			var func = function(){
+				alert(this.id)
+			}
+
+			func.call(this);
+
+
+			var test = [].shift.call([a,b,c]);
+			console.log(test);
+		}
+	</script>
+</body>
+</html>

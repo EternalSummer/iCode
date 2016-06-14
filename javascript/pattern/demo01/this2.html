@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var obj1 = {
+			name:'steven',
+			getName:function () {
+				return this.name;
+			}
+		};
+
+		var obj2 = {
+			name : "summer"
+		}
+
+		// 当另外一个变量getName2 引用obj1.getName 并调用 此时是普通函数模式 this 指向全局的window 所以程序要么undefined 要么空
+		var getName2 = obj1.getName;
+		console.log(getName2());
+		document.write(getName2());
+
+
+		
+
+
+	</script>
+</body>
+</html>

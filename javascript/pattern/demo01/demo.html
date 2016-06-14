@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>克隆对象</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		 /*
+		 类与类的解偶非常重要，依赖倒置的原则提醒我们创建对象的时候要避免依赖具体类型，而使用new XXX创建对象的就显得很僵硬。
+
+		 工厂方法和抽象工厂方法就是为解决这个问题而生。
+		 
+		 */
+		 Object.create = Object.create || function(obj){
+		 	var F = function(){};
+		 	F.prototype = obj;
+		 	return F;
+		 }
+
+
+		 var  Plane = function(argument) {
+		 	this.blood = 100;
+		 	this.level = 1;
+		 }
+
+		 var plane = new Plane();
+		 plane.blood = 99;
+		 plane.level =3;
+
+		 var clonePlane = Object.create(plane);
+		 console.log(clonePlane.blood);
+		 console.log(clonePlane.level);
+
+		 document.write(clonePlane.blood+"<br/>");
+		 document.write(clonePlane.level);
+
+
+	</script>
+</body>
+</html>

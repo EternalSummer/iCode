@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="d1">hello world</div>
+	<script type="text/javascript">
+		
+	//call和apply 传入参数方式不一样
+	//apply 接收两个餐素 第一个参数指定了函数体内 this对象指向 
+	//第二个参数 数组
+
+	var func = function(a,b,c) {
+			alert([a,b,c]);
+	}
+
+	func.apply(null,[1,2,3]);
+
+
+	//call第一个参数和apply一样 第二个参数相当于java中可变参数
+	func.call(null,1,2);
+
+
+		
+	</script>
+</body>
+</html>

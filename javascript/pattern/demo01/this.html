@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var obj1 = {
+			name:'steven',
+			getName:function () {
+				return this.name;
+			}
+		};
+
+		var obj2 = {
+			name : "summer"
+		}
+
+		console.log(obj1.getName());//steven
+		//传入this 后 this指向obj2  
+		console.log(obj1.getName.call(obj2));//summer
+
+
+		
+
+
+	</script>
+</body>
+</html>

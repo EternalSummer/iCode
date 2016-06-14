@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="d1">hello world</div>
+	<script type="text/javascript">
+		document.getElementById = (function(doc){
+			return function(){
+				return doc.apply(document,arguments);
+			}
+		})(document.getElementById);
+
+
+		var getId = document.getElementById;
+		var D1 = getId('d1');
+
+		console.log(D1.innerHTML);
+
+
+
+
+		
+	</script>
+</body>
+</html>
