@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="../jquery.js" type="text/javascript"></script>
+	<script src="../handlebars-v4.0.5.js" type="text/javascript"></script>
+</head>
+<body>
+	<script id="demo-template" type="text/x-handlebars-template">
+		
+		<div  class="entry">
+			  <h1>{{title}}</h1>
+			  <div class="body">
+			    {{{body}}}
+			  </div>
+			</div>
+	</script>
+
+
+	<script type="text/javascript">
+		$(function(){
+			var data = {
+				  title: "All about <p> Tags",
+				  body: "<p>This is a post about &lt;p&gt; tags</p>"
+				}
+			var source = $("#demo-template").html();
+			var myTemplate = Handlebars.compile(source);
+			$("body").append(myTemplate(data));
+		});
+	</script>
+</body>
+</html>
