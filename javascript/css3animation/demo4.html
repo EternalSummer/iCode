@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3D形变</title>
+	<style type="text/css">
+		div{
+			width: 300px;
+			height: 100px;
+			background-color: yellow;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="div">示例代码</div>
+
+	<button onclick="rotateX()">绕X轴旋转</button>
+	<button onclick="rotateY()">绕Y轴旋转</button>
+	<button onclick="rotateZ()">绕Z轴旋转</button>
+	<script type="text/javascript">
+		var n,rotINT,rotXINT,rotYINT,rotZINT;
+		var div = document.getElementById("div");
+		function rotateX() {
+			n=0;
+			clearInterval(rotXINT);
+			rotXINT = setInterval("startXRotate()",10);
+		}
+
+		function startXRotate() {
+			n = n+1;
+			div.style.transform ="rotateX("+n+"deg)";
+			if (n==180) {
+				clearInterval(rotXINT);
+				n = 0 ;
+			}
+		}
+
+
+
+		function rotateY() {
+			n=0;
+			clearInterval(rotYINT);
+			rotYINT = setInterval("startYRotate()",10);
+		}
+
+		function startYRotate() {
+			n = n+1;
+			div.style.transform ="rotateY("+n+"deg)";
+			if (n==180) {
+				clearInterval(rotYINT);
+				n = 0 ;
+			}
+		}
+
+
+
+
+		function rotateZ() {
+			n=0;
+			clearInterval(rotYINT);
+			rotZINT = setInterval("startZRotate()",10);
+		}
+
+		function startZRotate() {
+			n = n+1;
+			div.style.transform ="rotateZ("+n+"deg)";
+			if (n==180) {
+				clearInterval(rotZINT);
+				n = 0 ;
+			}
+		}
+	</script>
+</body>
+</html>

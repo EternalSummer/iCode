@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>transform 形变属性演示示例</title>
+	<style type="text/css">
+		div{
+			width: 300px;
+			margin: 150px auto;
+			background-color: yellow;
+			text-align: center;
+			transform: rotate(45deg);
+		}
+	</style>
+</head>
+<body>
+	<div id="demo">示例文字</div>
+	<button onclick="scaleTest()">缩放</button>
+	<button onclick="skewTest()">倾斜</button>
+	<button onclick="translateTest()">平移</button>
+	<script type="text/javascript">
+		function scaleTest() {
+			var div = document.getElementById("demo");
+			//div.style.transform = "scale(0.5)";
+			div.style.transform = "scale(0.5,2)";
+		}
+
+
+		function skewTest(){
+			var div = document.getElementById("demo");
+			div.style.transform = "skew(30deg,30deg)";
+		}
+
+		function translateTest(){
+			var div = document.getElementById("demo");
+			div.style.transform = "translate(100px,500px)";
+		}
+	</script>
+</body>
+</html>
