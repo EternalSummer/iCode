@@ -61,3 +61,18 @@
         $('#tableList').html(myTemplate(data));
       });
     </script>
+    
+----
+很多时候，我们拿到的json对象，本身就是一个list，并不是map，直接就可以遍历，不需要#each student这样指定遍历某个属性。此时可以用#each this，表示遍历当前对象。**this**表示当前上下文，非常灵活，以后还会提及，读者可以举一反三。
+
+
+
+     <script id="table-template" type="text/x-handlebars-template">
+      {{#each this}}
+        <tr>
+          <td>{{name}}</td>
+          <td>{{sex}}</td>
+          <td>{{age}}</td>
+        </tr> 
+      {{/each}}
+    </script>
