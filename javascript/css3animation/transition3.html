@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>transform和transition结合</title>
+	<style type="text/css">
+		div img{
+			position: absolute;
+			top:100px;
+			left:100px;
+			width: 200px;
+			height: 200px;
+
+			transform: rotate(0deg);
+			transition: transform 1s linear;
+		}
+		div:hover img{
+
+			transform: rotate(720deg);
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<img src="aimation3.png"  alt="">
+	</div>
+</body>
+</html>

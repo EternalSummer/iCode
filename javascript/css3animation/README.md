@@ -1,20 +1,25 @@
-transform 形变
-safari 3.1
-chrome 8 以上
-FireFox 4
-Opera 10
+#CSS3动画讲解
+##介绍内容
+###1.transform形变
+###2.transition动画
+###3.animation动画
 
+
+
+##1.transform 形变
+
+###   浏览器支持情况
+safari 3.1 up、chrome 8 以上、FireFox 4、Opera 10
+###   transform功能
 transform 实现四种文字、图像的变形处理，分别是旋转、缩放、倾斜、移动。
 
 demo1.html 基本使用
-
-rotate(45deg);
-scale(水平放大缩小、垂直放大缩小）
-skew（水平倾斜角度、垂直倾斜角度）
-translate 用于移动图像或者文字:translate(水平方向移动、垂直方向移动)
+#####rotate(45deg);
+#####scale(水平放大缩小、垂直放大缩小）
+#####skew（水平倾斜角度、垂直倾斜角度）
+#####translate 用于移动图像或者文字:translate(水平方向移动、垂直方向移动)
 
 demo2.html 同一个元素使用多种变形
-
 
 demo3.html 指定变形的基准点
 默认以元素的中心点 为基准点可以通过transform－origin改变基准点。

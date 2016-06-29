@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实现多个属性同时改变动画</title>
+	<style type="text/css">
+		div{
+			position: absolute;
+			top: 100px;
+			width: 500px;
+			background-color: yellow;
+		}
+
+
+		@keyframes mychange{
+			0%{
+				background-color: red;
+				transform: rotate(0deg);
+			}
+
+			40%{
+				background-color: darkblue;
+				transform: rotate(30deg);
+			}
+			70%{
+				background-color: yellow;
+				transform: rotate(-30deg);
+			}
+			100%{
+				background-color: red;
+				transform: rotate(0deg);
+			}
+		}
+		div:hover{
+			animation: mychange 5s linear infinite;
+		}
+	</style>
+</head>
+<body>
+	<div>示例文字</div>
+</body>
+</html>

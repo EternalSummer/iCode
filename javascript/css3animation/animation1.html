@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 
+	Transition功能通过指定属性的开始值与结束值，然后在两个属性值之间进行平滑过渡实现动画效果。
+	Animation功能通过定义多个关键帧及定义每个关键帧中元素的属性值来实现更为复杂的动画。
+	animation-name:指定关键帧集合的名称
+	animation-duration:指定完成整个动画需要的时间
+	animation-timing-function:实现动画的方法（linear，ease-in,ease-out,ease,ease-in-out）
+	animation-delay:延时
+	animation-iteration-count:动画执行次数 ，可指定infinite（无限次）
+	animation-direction:用于指定动画的执行方向
+						normal:初始值（动画执行完毕返回初始值）
+						alternate:交替改变动画执行方向
+						reverse:反方向执行动画
+						alterate-reverse:从反方开始交替改动动画执行方向
+	 简写:
+	 animation:keyframes名称 动画执行时长 动画实现方法 延时 执行次数 执行方向；
+	 
+	 -->
+	 <style type="text/css">
+	 	div{
+	 		background-color: red;
+	 	}
+
+	 	@keyframes mycolor{
+	 		0%{
+	 			background-color: red;
+	 		}
+	 		40%{
+	 			background-color: darkblue;
+	 		}
+	 		70%{
+	 			background-color: yellow;
+	 		}
+	 		100%{
+	 			background-color: red;
+	 		}
+	 	}
+
+	 	div:hover{
+	 		animation-name:mycolor;
+	 		animation-duration: 5s;
+	 		animation-timing-function:linear;
+	 		}	 	}
+	 </style>
+	<title>Animation的使用</title>
+</head>
+<body>
+	<div>示例文字</div>
+</body>
+</html>

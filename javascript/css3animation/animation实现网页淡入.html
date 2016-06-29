@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>animation实现网页淡入效果</title>
+	<style type="text/css">
+		@keyframes fadein{
+			0%{
+				opacity: 0;
+				background-color: white;
+			}
+			100%{
+				opacity: 1;
+				background-color: white;
+			}
+		}
+
+		body{
+			animation-name:fadein;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-iteration-count: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="intro">
+    <p>|编辑推荐|</p>    <p>▲一代文坛教父童庆炳先生回忆录</p>    <p>▲莫言、余华、毕淑敏、迟子建、刘震云、严歌苓</p>    <p>陶东风、王一川、罗钢、丁宁、孙津、周小仪等知名作家、学者联袂推荐</p>    <p>▲关于饥馑的童年，求学游历之路以及数十年教育生涯中的历历往事</p>    <p>▲文字朴拙，洗尽铅华，温暖动人</p>    <p>▲十余幅珍贵照片首次公布</p>    <p>|内容简介|</p>    <p>一代文坛教父童庆炳先生回忆录。</p>    <p>莫言、余华、毕淑敏、迟子建、刘震云、严歌苓、 陶东风、王一川、罗钢、丁宁、孙津、周小仪等知名作家、学者联袂推荐。</p>    <p>本书是童庆炳先生唯一一部随笔选集，十余幅珍贵照片首次公布，深情记录他对童年、故土和情亲历历往事的缅怀，以及青年时代外出求学游历、教书育人的诸多回忆，文字朴拙洗尽铅华，温暖动人，十分珍贵。</p></div>
+</body>
+</html>

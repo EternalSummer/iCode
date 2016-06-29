@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3动画 Transition</title>
+
+	<!-- Firefox4 up,Opera 10 up,Safari 3.1 up chrome 8 up ,IE 11 up 
+	Transitions功能通过将元素的某个属性从一个属性值在指定时间内平滑过渡到另一个属性值来实现动画
+	用法：
+	transition:property duration timing-function transition-delay;
+	其中：property表示对哪个属性进行平滑过渡。
+		 duration表示在多久时间内完成属性值的平滑过渡。
+		 timing-function表示通过什么方法进行平滑过渡。
+		 transition-delay:指定延时多少时间才真正开始执行。
+	分开写：
+		transition-property:background-color;
+		transition-duration:1s;
+		transition-timing-function:linear;
+		transition-delay:2s;
+	-->
+	<style type="text/css">
+		div{
+			background-color: #ffff00;
+			transition: background-color 1s linear 2s;
+		}
+		div:hover{
+			background-color: #00ffff;
+		}
+	</style>
+</head>
+<body>
+	
+	<div>示例文字</div>
+</body>
+</html>
