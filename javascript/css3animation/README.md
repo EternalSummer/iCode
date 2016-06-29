@@ -6,7 +6,7 @@
 
 
 
-##1.transform 形变
+##transform 形变
 
 ###   浏览器支持情况
 safari 3.1 up、chrome 8 以上、FireFox 4、Opera 10
@@ -27,7 +27,7 @@ demo3.html 指定变形的基准点
 transform-origin(水平方向的基准点位置left center right,垂直方向的基准点位置 top center bottom);
 
 
-3D变形功能
+###Transform之3D变形功能
 
 实现X轴 Y轴 Z轴方向上的旋转、缩放、倾斜、移动。
 
