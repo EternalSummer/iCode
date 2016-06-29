@@ -38,3 +38,26 @@ setInterval() 方法会不停地调用函数，直到 clearInterval() 被调用�
 
 1.旋转
 rotateX(),rotateY(),rotateZ().
+
+
+
+
+#Transition部分
+###浏览器支持
+Firefox4 up、Opera 10 up、Safari 3.1 up 、chrome 8 up ,IE 11 up 。
+
+##Transition功能
+通过将元素的某个属性从一个属性值在指定时间内平滑过渡到另一个属性值来实现动画
+	
+	用法：
+	transition:property duration timing-function transition-delay;
+	其中：property表示对哪个属性进行平滑过渡。
+		 duration表示在多久时间内完成属性值的平滑过渡。
+		 timing-function表示通过什么方法进行平滑过渡。
+		 transition-delay:指定延时多少时间才真正开始执行。
+	分开写：
+		transition-property:background-color;
+		transition-duration:1s;
+		transition-timing-function:linear;
+		transition-delay:2s;
+	
