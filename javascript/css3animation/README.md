@@ -1,5 +1,7 @@
+![Mou icon](http://25.io/mou/Mou_128.png)
 #CSS3动画讲解
-##介绍内容
+
+## Overview
 
 ###* transform形变
 ###* transition动画
@@ -93,3 +95,7 @@ Animation功能通过定义多个关键帧及定义每个关键帧中元素的�
 						alterate-reverse:从反方开始交替改动动画执行方向
 	 简写:
 	 animation:keyframes名称 动画执行时长 动画实现方法 延时 执行次数 执行方向；
+	 
+	 
+![beceri](https://raw.githubusercontent.com/EternalSummer/iCode/master/javascript/css3animation/timing-function.png)
+	 
