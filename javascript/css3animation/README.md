@@ -21,9 +21,9 @@ transform 实现四种文字、图像的变形处理，分别是旋转、缩放�
 demo1.html基本使用<br/>
 
 1.rotate(45deg);<br/>
-2.scale(水平放大缩小、垂直放大缩小）
+2.scale(水平放大缩小、垂直放大缩小）<br/>
 3.skew（水平倾斜角度、垂直倾斜角度）<br/>
-4.ranslate 用于移动图像或者文字:translate(水平方向移动、垂直方向移动)<br/>
+4.translate 用于移动图像或者文字:translate(水平方向移动、垂直方向移动)<br/>
 
 demo2.html 同一个元素使用多种变形
 
